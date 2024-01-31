@@ -1,0 +1,97 @@
+@import url('https://fonts.googleapis.com/css2?family=Work+Sans:wght@100;300;400;500&display=swap');
+
+
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root{
+    --primary-color: rgba(208, 158, 11, 0.814);
+    --backgrund-color: rgba(225, 215, 215, 0.875);
+    --header-color:rgb(229, 224, 224);
+}
+
+body {
+    background-color: var(--backgrund-color);
+    font-family: 'Work Sans', sans-serif;
+    
+}
+
+a {
+    text-decoration: none;
+    color: #000000;
+    cursor: pointer;
+}
+a:hover {
+    color: var(--primary-color);
+}
+
+
+
+
+
+
+/* CSS DE TARJETAS DE PERROS EN ADOPCIÓN */
+.big-container {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+}
+
+.tarjeta{
+    display:flex;
+    flex-direction:column;
+    justify-content:space-between;
+    width:320px;
+    border: 1px solid lightgray;
+    box-shadow: 2px 2px 8px 4px #d3d3d3d1;
+    border-radius:15px;
+    font-family: sans-serif;
+    margin: .5rem;
+}
+.titulo{
+    font-size: 24px;
+    padding: 10px 10px 0 10px;;
+}
+.cuerpo{
+    padding: 10px;
+}
+
+.cuerpo img {
+    max-width: 100%; 
+    max-height: 400px;
+    object-fit: cover; 
+}
+
+.pie{
+
+background: #7b9ee4;
+    border-radius:0 0 15px 15px;
+    padding: 10px;
+    text-align:center;
+
+}
+.pie:hover{
+    background-color: #6699ff;
+    cursor: pointer;
+}
+.pie a{
+    text-decoration: none;
+    color: white;
+}
+.pie a:after {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    z-index: 1;
+    content: ""
+}
+
+/* CSS DE TARJETAS DE PERROS EN ADOPCIÓN: FIN */
+
+

@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- ICONOS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+
+    <!-- ESTILOS CSS -->
+    <link rel="stylesheet" href="./css/index.css">
+    <title>Refugio Patitas</title>
+</head>
+<body>
+
+    <!-- HEADER -->
+    <header>
+            <a href="index.html">
+                <img src="https://assets.stickpng.com/thumbs/58af004d6c252499281ae910.png" alt="logo de la pagina web">
+                <h1 class="titulo-header">Refugio Patitas</h1>
+            </a>
+        
+        <!-- BARRA DE EXPLORACION -->
+        <div class="explore-header">
+            <!-- NAV -->
+            <nav class="navbar">
+                <ul class="nav-list">
+                    <li><a href="./index.html">Inicio</a></li>
+                    <li><a href="./html/quienes-somos.html">Quienes somos</a></li>
+                    <li><a href="./html/adopciones.html">Adopciones</a></li>
+                    <li><a href="./html/ayudanos.html">Ayudanos</a></li>
+                    <li><a href="./html/contacto.html">Contacto</a></li>
+                </ul>
+            </nav>
+            <!-- NAV -->
+
+        </div>
+        <!-- BARRA DE EXPLORACION -->
+    </header>
+    <!-- HEADER -->
+
+    <!-- MAIN -->
+    <main class="main">
+        <section class="portada-sección">   
+            <article class="encontra-tu-perrito">
+                <h3>¡Encontrá a tu perrito!</h3>
+                <img src="img\imagen-portada.jpeg" alt="imagen de portada de un perro del refugio">
+            </article>
+            <article class="visitanos">
+                <h3>¡Visitanos! <span><i class="bi bi-house-heart-fill"></i></span></h3>
+                <div class="maps">
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2664.553672541226!2d-58.23681728958864!3d-34.719032872800035!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95a32f3ff8bf9f45%3A0x48ce3472ebd6fdc8!2sRefugio%20Adopciones%20Quilmes!5e1!3m2!1ses!2sar!4v1706505164489!5m2!1ses!2sar" width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                <!-- LA DIRECCION DE GOOGLE MAPS NO ESTA RELACIONADA CON ESTA PÁGINA, SOLO ES UN ASPECTO VISUAL -->
+                </div>
+            </article>
+        </section>
+
+
+        <section class="voluntarios">
+            <article>
+                <h3>
+                    ¿Querés ser voluntario?
+                </h3>
+                <div class="voluntarios img">
+                    <img src="img/voluntarios-1.jpg" alt="imagen de voluntarios del refugio 1">
+
+                    <img src="img/voluntarios-2.jpg" alt="imagen de voluntarios del refugio 2">
+
+                    <img src="img/voluntarios-3.jpg" alt="imagen de voluntarios del refugio 3">
+                </div>
+                <p class="descripcion-voluntarios">
+                    Los voluntarios de rescate de perros son héroes dedicados a salvar vidas caninas. Realizan búsquedas y rescates, ofrecen cuidado en refugios y trabajan en la rehabilitación de perros. Su labor apasionada marca la diferencia en la vida de los animales necesitados.
+                </p>
+
+                <div class="formulario-voluntarios">
+                    <h3>Ser voluntario</h3>
+                    <form action="procesar.php" method="POST">
+                        <div class="form-inputs-vol">
+                <div>
+                    <label for="email">Correo electrónico:</label>
+                    <input type="email" id="email" name="email" placeholder="email" required>
+                </div>            
+                <div>
+                    <label for="telefono">Teléfono (Argentina):</label>
+                    <input type="tel" id="telefono" name="telefono" pattern="11[0-9]{8}" placeholder="teléfono" required>
+                </div>
+                <div>
+                    <label for="nombre">Nombre completo:</label>
+                    <input type="text" id="nombre" name="nombre" placeholder="nombre completo" required>
+                </div>
+                <div>
+                    <label for="mensaje">Mensaje:</label>
+                    <textarea id="mensaje" name="mensaje" cols="30" rows="5"></textarea>
+                </div>
+                
+                            <button type="submit">Enviar</button>
+                        </div>
+                    </form>
+                </div>
+                
+            </article>
+        </section>
+    </main>
+    <!-- MAIN -->
+    
+    <!-- FOOTER -->
+    <footer>
+        <div class="footer-grid">
+            <h4>
+                Seguínos <span>
+                    <i class="bi bi-heart-fill"></i>
+                </span>
+            </h4>
+            <div class="social-icons">
+                <a href="#" class="social-icon-link">
+                    <span>
+                        <i class="bi bi-facebook"></i>
+                    </span>
+                </a>
+                <a href="#" class="social-icon-link">
+                    <span>
+                        <i class="bi bi-messenger"></i>
+                    </span>
+                </a>
+                <a href="#" class="social-icon-link">
+                    <span>
+                        <i class="bi bi-instagram"></i>
+                    </span>
+                </a>
+                <a href="#" class="social-icon-link">
+                    <span>
+                        <i class="bi bi-youtube"></i>
+                    </span>
+                </a>
+            </div>
+        </div>
+        <div class="footer-grid">
+            <p>Inicio</p>
+            <ul class="ul-footer">
+                <li><a href="./html/quienes-somos.html">Quienes somos</a></li>
+                <li><a href="./html/adopciones.html">adopciones</a></li>
+                <li><a href="./html/ayudanos.html">ayudanos</a></li>
+                <li><a href="./html/contacto.html">contacto</a></li>
+                <li><a href="./html/preguntas-frecuentes">F.A.Q</a></li>
+            </ul>
+        </div>
+        <div class="footer-grid">
+                <img src="img/imagen-footer.jpg" alt="imagen de perros del refugio patitas" class="imagen-del-footer">
+        </div>
+
+        <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Sapiente labore dicta iure quaerat blanditiis, nostrum necessitatibus, voluptatum dolore ratione tempore eum. Facilis, quaerat. Enim necessitatibus, corporis minima mollitia iusto vel?
+        </p>
+    </footer>
+    <!-- FOOTER -->
+</body>
+</html>
+
